@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>XTech</title>
     <link rel="import" href="backet.html">
+    <link rel="import" href="favourite.html">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
 
 </head>
@@ -27,12 +29,15 @@
                 </form>
             </div>
             <div class="main__phone">
-                <img src="./img/icons8-phone 3.png" alt="phone">
-                8 (800) 644-33-00
+                <div class="phone__text">
+                    <img src="./img/icons8-phone 3.png" alt="phone">
+                    <h6>
+                        8 (800) 644-33-00</h6>
+                </div>
             </div>
             <div class="personal">
-                <a href="#"><img src="./img/1.png"></a>
-                <a href="#" id="per2"><img src="./img/3.png"></a>
+                <a href="./backet.html"><img src="./img/1.png"></a>
+                <a href="./favourite.html" id="per2"><img src="./img/3.png"></a>
                 <a href="#" id="per3"><img src="./img/2.png"></a>
             </div>
         </div>
@@ -527,7 +532,7 @@
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                         aria-haspopup="true" aria-expanded="false">Процессоры</a>
                     <div class="dropdown-menu dropdown-menu-right" id="dropdown-menu-pros">
-                         <div class="wide_menu">
+                        <div class="wide_menu">
                             <div class="colunm1">
                                 <div class="menu-item"><a class="dropdown-item" href="#">Мониторы</a></div>
                                 <div class="menu-item"><a class="dropdown-item" href="#">Мониторы</a></div>
@@ -672,47 +677,164 @@
         <a href="#">Главная</a> <img src="./img/icons8-back 3.png"> <a href="#">Категории</a><img
             src="./img/icons8-back 3.png"><a href="#" id="page">Смартфоны</a>
         <div class="filter__goods">
-            <form action="select1.php" method="post">
-                <p class="goods"><select size="13" multiple name="cathegory[]">
-                        <option disabled class="select-name">Категории </option>
-                        <option value="Мониторы">Мониторы</option>
-                        <option value="Смартфоны">Смартфоны</option>
-                        <option value="Корпусы для ПК">Корпусы для ПК</option>
-                        <option value="Мыши">Мыши</option>
-                        <option value="Клавиатуры">Клавиатуры</option>
-                        <option value="Термопасты">Термопасты</option>
-                        <option value="Процессоры">Процессоры</option>
-                        <option value="Память">Память</option>
-                        <option value="Платы">Платы</option>
-                        <option value="Часы">Часы</option>
-                        <option value="Планшеты">Планшеты</option>
-                    </select></p>
-                <p class="brands"><select size="5" multiple name="brand[]">
-                        <option disabled class="select-name"> Бренд</option>
-                        <option value="iPhone">iPhone</option>
-                        <option value="iPhone">iPhone</option>
-                        <option value="iPhone">iPhone</option>
-                        <option value="iPhone">iPhone</option>
-                    </select></p>
-                <div class="color">
-                    <p class="select-name">Цвет</p>
-                    <img src="./img/Rectangle 73.png">
-                    <img src="./img/Rectangle 74.png">
-                    <img src="./img/Rectangle 75.png">
-                    <img src="./img/Rectangle 95.png">
+            <div class="goods">
+                <h5>Категории </h5>
+                <div>
+                    <a href="#">
+                        Мониторы</a>
                 </div>
-                <p class="diagonal"><select size="5" multiple name="diagonal[]">
-                        <option disabled class="select-name">Диагональ экрана</option>
-                        <option value="4'5">4'5 дюймов</option>
-                        <option value="5'5">5'5 дюймов</option>
-                        <option value="6'5">6'5 дюймов</option>
-                        <option value="7">7 дюймов</option>
-                    </select></p>
+                <div class="goods__active">
+                    <a href="#">
+                        Смартфоны</a>
+                </div>
+                <div>
+                    <a href="#">
+                        Корпусы для ПК</a>
+
+                </div>
+                <div>
+
+                    <a href="#">
+                        Мыши</a>
+
+                </div>
+                <div>
+
+                    <a href="#">
+                        Клавиатуры</a>
+
+                </div>
+                <div>
+
+                    <a href="#">
+                        Термопасты</a>
+
+                </div>
+                <div>
+
+                    <a href="#">
+                        Процессоры</a>
+
+                </div>
+                <div>
+
+                    <a href="#">
+                        Память</a>
+
+                </div>
+                <div>
+
+                    <a href="#">
+                        Платы</a>
+
+                </div>
+                <div>
+
+                    <a href="#">
+                        Часы</a>
+
+                </div>
+                <div>
+
+                    <a href="#">
+                        Планшеты</a>
+
+                </div>
+            </div>
+            <form action="#" method="GET">
+                <div class="brands">
+                    <h5> Бренд</h5>
+                    <div>
+                        <input type="radio" name="brands" id="iphone" class="choose__brand">
+                        <label for="iphone">
+                            <span>iPhone</span>
+
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="brands" id="iphone2" class="choose__brand">
+                        <label for="iphone2">
+                            <span>iPhone</span>
+
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="brands" id="iphone3" class="choose__brand">
+                        <label for="iphone3">
+
+                            <span>iPhone</span>
+
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="brands" id="iphone4" class="choose__brand">
+                        <label for="iphone4">
+                            <span>iPhone</span>
+
+                        </label>
+                    </div>
+                </div>
+                <div class="color">
+                    <h5>Цвет</h5>
+                    <div class="color__red">
+                        <input type="radio" name="color" id="red">
+                        <label for="red">
+                        </label>
+                    </div>
+                    <div class="color__yellow">
+                        <input type="radio" name="color" id="yellow">
+                        <label for="yellow">
+                        </label>
+                    </div>
+                    <div class="color__white">
+
+                        <input type="radio" name="color" id="white">
+                        <label for="white"></label>
+                    </div>
+                    <div class="color__black">
+
+                        <input type="radio" name="color" id="black">
+                        <label for="black"></label>
+                    </div>
+
+                </div>
+                <div class="screen">
+                    <h5>Диагональ экрана</h5>
+                    <div>
+                        <input type="radio" name="screen" id="4'5">
+                        <label for="4'5">
+                            <span>4'5 дюймов</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="screen" id="5'5">
+                        <label for="5'5">
+                            <span>5'5 дюймов</span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="screen" id="6'5">
+                        <label for="6'5">
+                            <span> 6'5 дюймов </span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="screen" id="7">
+                        <label for="7">
+                            <span> 7 дюймов </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="filter__price">
+                    <div class="filter">
+
+                    </div>
+                </div>
                 <button type="submit">Применить</button>
             </form>
         </div>
     </section>
-    <!--section>
+    <section>
         <div class="field__h">
             <h2>Смартфоны</h2>
         </div>
@@ -734,12 +856,16 @@
         <div class="field">
             <div class="iphone" id="iphone1">
                 <h5>iPhone XR</h5>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
                 <p>Нет в наличии</p>
             </div>
             <div class="iphone" id="iphone2">
                 <h5>iPhone XR</h5>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
                 <div class="hidden_field">
                     5’5 дюймов </br>
                     64gb</br>
@@ -747,13 +873,14 @@
                 </div>
                 <p>5299 <img src="./img/icons8-Ñ_ÐºÑ_Ð°Ð¸Ð½Ñ_ÐºÐ°Ñ_-Ð³Ñ_Ð¸Ð²Ð½Ñ_-48 18.png"> </p>
                 <div class="hidden_field2">
-                    <img src="./img/heart.png">
                     <button class="btn-ens-action" data-rel="dcc1b851156931">Купить</button>
                 </div>
             </div>
             <div class="iphone" id="iphone3">
                 <h5>iPhone XR</h5>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
                 <div class="hidden_field">
                     5’5 дюймов </br>
                     64gb</br>
@@ -767,7 +894,9 @@
             </div>
             <div class="iphone" id="iphone4">
                 <h5>iPhone XR</h5>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
                 <div class="hidden_field">
                     5’5 дюймов </br>
                     64gb</br>
@@ -781,7 +910,9 @@
             </div>
             <div class="iphone" id="iphone5">
                 <h5>iPhone XR</h5>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
                 <div class="hidden_field">
                     5’5 дюймов </br>
                     64gb</br>
@@ -795,7 +926,9 @@
             </div>
             <div class="iphone" id="iphone6">
                 <h5>iPhone XR</h5>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
                 <div class="hidden_field">
                     5’5 дюймов </br>
                     64gb</br>
@@ -809,7 +942,9 @@
             </div>
             <div class="iphone" id="iphone7">
                 <h5>iPhone XR</h5>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
                 <div class="hidden_field">
                     5’5 дюймов </br>
                     64gb</br>
@@ -823,7 +958,9 @@
             </div>
             <div class="iphone" id="iphone8">
                 <h5>iPhone XR</h5>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
                 <div class="hidden_field">
                     5’5 дюймов </br>
                     64gb</br>
@@ -837,7 +974,9 @@
             </div>
             <div class="iphone" id="iphone9">
                 <h5>iPhone XR</h5>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
                 <div class="hidden_field">
                     5’5 дюймов </br>
                     64gb</br>
@@ -851,7 +990,9 @@
             </div>
             <div class="iphone" id="iphone10">
                 <h5>iPhone XR</h5>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
                 <div class="hidden_field">
                     5’5 дюймов </br>
                     64gb</br>
@@ -865,7 +1006,9 @@
             </div>
             <div class="iphone" id="iphone11">
                 <h5>iPhone XR</h5>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
                 <div class="hidden_field">
                     5’5 дюймов </br>
                     64gb</br>
@@ -879,7 +1022,57 @@
             </div>
             <div class="iphone" id="iphone12">
                 <h5>iPhone XR</h5>
-                <div class="image"></div>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
+                <div class="hidden_field">
+                    5’5 дюймов </br>
+                    64gb</br>
+                    влагозащита ip 68
+                </div>
+                <p>5299 <img src="./img/icons8-Ñ_ÐºÑ_Ð°Ð¸Ð½Ñ_ÐºÐ°Ñ_-Ð³Ñ_Ð¸Ð²Ð½Ñ_-48 18.png"> </p>
+                <div class="hidden_field2">
+                    <img src="./img/heart.png">
+                    <button class="btn-ens-action" data-rel="dcc1b851156931">Купить</button>
+                </div>
+            </div>
+            <div class="iphone" id="iphone13">
+                <h5>iPhone XR</h5>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
+                <div class="hidden_field">
+                    5’5 дюймов </br>
+                    64gb</br>
+                    влагозащита ip 68
+                </div>
+                <p>5299 <img src="./img/icons8-Ñ_ÐºÑ_Ð°Ð¸Ð½Ñ_ÐºÐ°Ñ_-Ð³Ñ_Ð¸Ð²Ð½Ñ_-48 18.png"> </p>
+                <div class="hidden_field2">
+                    <img src="./img/heart.png">
+                    <button class="btn-ens-action" data-rel="dcc1b851156931">Купить</button>
+                </div>
+            </div>
+            <div class="iphone" id="iphone14">
+                <h5>iPhone XR</h5>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
+                <div class="hidden_field">
+                    5’5 дюймов </br>
+                    64gb</br>
+                    влагозащита ip 68
+                </div>
+                <p>5299 <img src="./img/icons8-Ñ_ÐºÑ_Ð°Ð¸Ð½Ñ_ÐºÐ°Ñ_-Ð³Ñ_Ð¸Ð²Ð½Ñ_-48 18.png"> </p>
+                <div class="hidden_field2">
+                    <img src="./img/heart.png">
+                    <button class="btn-ens-action" data-rel="dcc1b851156931">Купить</button>
+                </div>
+            </div>
+            <div class="iphone" id="iphone15">
+                <h5>iPhone XR</h5>
+                <div class="image">
+                    <img src="./img/9876 14.png" alt="" srcset="">
+                </div>
                 <div class="hidden_field">
                     5’5 дюймов </br>
                     64gb</br>
@@ -892,38 +1085,173 @@
                 </div>
             </div>
         </div>
-    </!--section>
+    </section>
     <section>
-        <div id="mirrors">
-            <img src="./img/Rectangle 134.png" alt="mirror1">
-            <img src="./img/Rectangle 135.png" alt="mirror2">
-            <img src="./img/Rectangle 136.png" alt="mirror3">
-            <img src="./img/Rectangle 137.png" alt="mirror4">
-        </div>
-    </!--section>
-    <section>
-        <div class="slider2">
-            <div class="slider2-slide">
-                <h2>Мы компания “Xtech”</h2>
+        <div class="mirrors">
+            <div class="mirrors__item1">
+                <img src="./img/3 2 1.png" alt="pc">
+                <h6>Мониторы</h6>
             </div>
-            <div class="slider2-slide">
-                <h2>Мы компания “Xtech”</h2>
+            <div class="mirrors__item2">
+                <img src="./img/1 (2) 1.png" alt="phone">
+                <h6>Смартфоны</h6>
             </div>
-            <div class="slider2-slide">
-                <h2>Мы компания “Xtech”</h2>
+            <div class="mirrors__item3">
+                <img src="./img/110943148_images_13334720908 1.png" alt="process">
+                <h6>Компьютеры</h6>
+            </div>
+            <div class="mirrors__item4">
+                <img src="./img/2 (2) 1.png" alt="keyboard">
+                <h6>Клавиатуры</h6>
             </div>
         </div>
     </section>
     <section>
-        <div id="payment">
-            <div>
-                <img src="img/brands.png" alt="intel"> </div>
-            </section-->
-    <footer></footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
+        <section>
+            <div class="nav__slider">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+
+                        </li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                        </li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                        </li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="slider-wrap1">
+                                <div class="slider__head">
+                                    <h2>Мы компания “Xtech”</h2>
+                                </div>
+                                <p>Xtech – самый большой онлайн-магазин в стране. Уже 10 лет мы воплощаем маленькие
+                                    мечты и
+                                    грандиозные планы миллионов людей. У нас можно найти буквально все. Мы продаем по
+                                    справедливой цене и предоставляем гарантию, так как считаем, что онлайн-шопинг
+                                    должен
+                                    быть максимально удобным и безопасным. И каждый раз, когда кто-то нажимает «Купить»,
+                                    мы
+                                    понимаем, что делаем нужное дело.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slider-wrap1">
+                                <div class="slider__head">
+                                    <h2>Мы компания “Xtech”</h2>
+                                </div>
+                                <p>Xtech – самый большой онлайн-магазин в стране. Уже 10 лет мы воплощаем маленькие
+                                    мечты и
+                                    грандиозные планы миллионов людей. У нас можно найти буквально все. Мы продаем по
+                                    справедливой цене и предоставляем гарантию, так как считаем, что онлайн-шопинг
+                                    должен
+                                    быть максимально удобным и безопасным. И каждый раз, когда кто-то нажимает «Купить»,
+                                    мы
+                                    понимаем, что делаем нужное дело.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-wrap1">
+                            <div class="slider__head">
+                                <h2>Мы компания “Xtech”</h2>
+                            </div>
+                            <p>Xtech – самый большой онлайн-магазин в стране. Уже 10 лет мы воплощаем маленькие
+                                мечты и
+                                грандиозные планы миллионов людей. У нас можно найти буквально все. Мы продаем по
+                                справедливой цене и предоставляем гарантию, так как считаем, что онлайн-шопинг
+                                должен
+                                быть максимально удобным и безопасным. И каждый раз, когда кто-то нажимает «Купить»,
+                                мы
+                                понимаем, что делаем нужное дело.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="payment">
+                <div class="payment__icon1">
+                    <img src="./img/intel_PNG24 5.png" alt="intel"> </div>
+                <div class="payment__icon2">
+                    <img src="./img/microsoft_PNG4 1.png" alt="microsoft">
+                </div>
+                <div class="payment__icon3">
+                    <img src="./img/1280px-Acer_2011 1.png" alt="acer">
+                </div>
+                <div class="payment__icon4">
+                    <img src="./img/602px-ASUS_Corporate_Logo 1.png" alt="asus">
+                </div>
+                <div class="payment__icon5">
+                    <img src="./img/23656 1.png" alt="apple">
+                </div>
+                <div class="payment__icon6">
+                    <img src="./img/Dell-Logo 1.png" alt="Dell">
+                </div>
+                <div class="payment__icon7">
+                    <img src="./img/samsung_logo_PNG9 1.png" alt="samsung">
+                </div>
+        </section>
+        <footer>
+            <div class="footer__ancors">
+                <div>
+                    <ul>XTech
+                        <li>
+                            <img src="./img/icons8-phone 2.png" alt="tel"> 8 (495) 770-55-50
+                        </li>
+                        <li>
+                            <img src="./img/icons8-clock_8 1.png" alt="clock"> Время работы с 10:00 до 20:00
+                        </li>
+                        <li>
+                            <img src="./img/icons8-place_marker 1.png" alt="place"> г.Винница, ул.Николаевская
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>Для покупателя
+                        <li> <a href="#">Акции</a> </li>
+                        <li><a href="#">Партнерская программа</a> </li>
+                        <li><a href="#">Для поставщиков</a> </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>Пресс-центр
+                        <li><a href="#">Каталог товаров</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Нашли дешевле?</a></li>
+                        <li><a href="#">Нашли дешевле?</a></li>
+                        <li><a href="#">Акции</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>Пресс-центр
+                        <li><a href="#">Для поставщиков</a></li>
+                        <li><a href="#">Для поставщиков</a></li>
+                        <li><a href="#">Для поставщиков</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__social">
+                <h3>Мы в социальных сетях</h3>
+                <a href="https://www.instagram.com/?hl=ru" target="blank"><img
+                        src="./img/icons8-instagram_new 1.png"></a>
+                <a href="https://www.facebook.com/" target="blank"><img src="./img/icons8-facebook 1.png"></a>
+                <a href="https://twitter.com/?lang=ru" target="blank"><img src="./img/icons8-twitter 1.png"></a>
+                <a href="https://www.whatsapp.com/?lang=ru" target="blank"><img src="./img/icons8-whatsapp 1.png"></a>
+            </div>
+            <div class="footer__pay">
+                <h3>Мы принимаем к оплате</h3>
+                <img src="./img/sberbank 1.png" alt="sberbank">
+                <img src="./img/skrill-moneybookers 1.png" alt="skrill">
+                <img src="./img/mastercard 1.png" alt="mastercard">
+                <img src="./img/webmoney 1.png" alt="webmoney">
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="./js/main.js"></script>
 </body>
 
 </html>

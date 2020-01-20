@@ -1,0 +1,133 @@
+
+
+.basket1__navigation {
+    margin-left: 135px;
+    margin-top: 20px;
+}
+.basket1__navigation a {
+    text-decoration: none;
+    font-family: Roboto;
+    color: #B0B0B0;
+    font-size: 12px;
+    line-height: 14px;
+}
+.basket1__navigation a:active {
+    color: #2B4643;
+}
+.basket1__products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 135px;
+    margin-right: 100px;
+}
+.basket1__item {
+    margin-left: 50px;
+    position: relative;
+    width: 500px;
+    height: 200px;
+}
+.basket1__item img {
+    position: absolute;
+    top: 30px;
+}
+.basket1__item h3 {
+    position: absolute;
+    top: 30px;
+    left: 120px;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #797979;
+}
+.basket1__item p {
+    position: absolute;
+    left: 400px;
+    top: 30px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 18px;
+    color: #253F33;
+}
+.basket1__color {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.basket1__color h6 {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #797979;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+}
+
+.color__type {
+    margin-top: 20px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+}
+
+label:nth-of-type(1) {
+    background: #E7A33D;
+}
+label:nth-of-type(2) {
+    background-color: #B01212;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+label:nth-of-type(3) {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+label:nth-of-type(4) {
+    background: #151515;
+}
+.basket1__color input {
+    visibility: hidden;
+}
+.choose__goods a {
+    text-decoration: none;
+    background: #44594F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px;
+    margin-left: 60px;
+    padding: 10px 30px;
+}
+.main__phone1 h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Roboto";
+    font-size: 18px;
+}
+.main__phone1 {
+    position: relative;
+    width: 200px;
+    height: 32px;
+}
+.main__phone1 img {
+    position: absolute;
+    top: 21px;
+}
+.main__phone1 h6 {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    font-weight: normal;
+}
+.main__phone1 img:hover {
+    transform: scale(1.1);
+}
