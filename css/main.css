@@ -191,6 +191,24 @@ a.nav-link.dropdown-toggle::after {
     right: 185px;
     z-index: 1;
 }
+.carousel-indicators {
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+.carousel-indicators>li {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-left: 9px;
+}
+.carousel-indicators>li.active {
+    width: 12px;
+    height: 12px;
+    margin-top: -3px;
+}
 .filter {
     margin-left: 135px;
     float: left;
@@ -703,6 +721,7 @@ footer h3:nth-of-type(2) {
 .footer__social {
     margin-left: 167px;
     margin-top: -44px;
+    color: #ffffff;
 }
 .footer__pay {
     margin-left: 463px;
