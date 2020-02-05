@@ -125,7 +125,7 @@ a.nav-link.dropdown-toggle::after {
     background-color: #E8E8E8;    
 }
 .menu-item {
-    font-size: 14px;
+    font-size: 13px;
     font-family: Roboto;
     color: rgba(0, 0, 0, 0.6);
     margin-top: 20px;
