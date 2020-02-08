@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>XTech</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/backet.css">
@@ -34,10 +35,56 @@
                 </div>
             </div>
             <div class="personal">
-                <a href="./backet.html"><img src="./img/1.png"></a>
-                <a href="#" id="per2"><img src="./img/3.png"></a>
-                <a href="#" id="per3"><img src="./img/2.png"></a>
+                <a href="./backet.html"><img src="./img/1.png" alt="backet"></a>
+                <a href="./favourite.html" id="per2"><img src="./img/3.png"></a>
+                <a href="#" data-toggle="modal" data-target="#exampleModal">
+                    <img src="./img/2.png"></a>
+                <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#home">Вход</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#registration">Регистрация</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="modal-body">
+                                <div class="tab-content">
+                                    <div id="home" class="container tab-pane active"><br>
+                                        <form action="#" method="GET">
+                                            <input type="email" placeholder="Email">
+                                            <input type="password" placeholder="Пароль">
+                                            <button type="submit">Войти</button>
+                                            <img src="./img/login/Vector.png">
+                                            <img src="./img/login/Vector2.png">
+                                        </form>
+                                    </div>
+                                    <div id="registration" class="container tab-pane fade"><br>
+                                        <form action="#" method="GET">
+                                            <input type="text" placeholder="Ваше имя">
+                                            <input type="email" placeholder="Email">
+                                            <input type="password" placeholder="Придумайте пароль">
+                                            <p>Пароль должен быть не менее 6 символов, содержать цифры и латинские
+                                                буквы, в том числе заглавные, и не должен совпадать с именем и эл.
+                                                почтой.</p>
+                                            <p>Регистрируясь, вы соглашаетесь с <a href="#">пользовательским
+                                                    соглашением</a></p>
+                                            <button type="submit">Зарегистрироваться</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
     </header>
     <section>
@@ -211,6 +258,9 @@
             <img src="./img/webmoney 1.png" alt="webmoney">
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
